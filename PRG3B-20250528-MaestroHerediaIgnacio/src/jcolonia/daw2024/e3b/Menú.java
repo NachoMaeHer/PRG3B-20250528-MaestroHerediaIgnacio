@@ -6,11 +6,25 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JToolBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.SwingConstants;
+import javax.swing.JPopupMenu;
+import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JMenuBar;
 
 public class Menú extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	private JPanel contentPane;
+	private JPanel jpanelGeneral;
+	private JPanel jpanelExterior;
+	private JPopupMenu popupMenu;
+	private JMenuBar subMenu;
+	private JMenu NewSubMenu;
+	private JMenuItem subMenuAyuda;
 
 	/**
 	 * Launch the application.
@@ -32,12 +46,47 @@ public class Menú extends JFrame {
 	 * Create the frame.
 	 */
 	public Menú() {
+		initialize();
+	}
+	private void initialize() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		jpanelGeneral = new JPanel();
+		jpanelGeneral.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().setLayout(new BorderLayout());
-		setContentPane(contentPane);
+		setContentPane(jpanelGeneral);
+		jpanelGeneral.setLayout(new BorderLayout(0, 0));
+		jpanelGeneral.add(getJpanelExterior(), BorderLayout.CENTER);
 	}
 
+	private JPanel getJpanelExterior() {
+		if (jpanelExterior == null) {
+			jpanelExterior = new JPanel();
+			jpanelExterior.setBorder(new EmptyBorder(10, 10, 10, 10));
+			jpanelExterior.setLayout(new BorderLayout(0, 10));
+			jpanelExterior.add(getMenuBar_1(), BorderLayout.NORTH);
+		}
+		return jpanelExterior;
+	}
+	private JMenuBar getMenuBar_1() {
+		if (subMenu == null) {
+			subMenu = new JMenuBar();
+			subMenu.setToolTipText("Menú");
+			subMenu.add(getNewSubMenu());
+		}
+		return subMenu;
+	}
+	private JMenu getNewSubMenu() {
+		if (NewSubMenu == null) {
+			NewSubMenu = new JMenu("Menú");
+			NewSubMenu.add(getSubMenuAyuda());
+		}
+		return NewSubMenu;
+	}
+	private JMenuItem getSubMenuAyuda() {
+		if (subMenuAyuda == null) {
+			subMenuAyuda = new JMenuItem("Ayuda");
+		}
+		return subMenuAyuda;
+	}
 }
