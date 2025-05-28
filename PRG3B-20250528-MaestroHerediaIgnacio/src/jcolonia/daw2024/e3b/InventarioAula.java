@@ -15,8 +15,8 @@ import java.util.Set;
  * @see Map
  * @see HashMap
  * 
- * @author <a href= "mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
- * @version 09.08 (20250525000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
+ * @version 09.08 (20250528000)
  */
 public class InventarioAula {
 	/** Separador usado al exportar/importar en archivos de texto */

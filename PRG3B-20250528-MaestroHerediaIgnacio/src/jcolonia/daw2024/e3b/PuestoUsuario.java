@@ -5,8 +5,8 @@ package jcolonia.daw2024.e3b;
  * 
  * @see InventarioAula
  *
- * @author <a href= "mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
- * @version 6.90 (2025426000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
+ * @version 6.90 (20250528000)
  * 
  * @param ordenador el código de identificación del equipo para el CAU
  * @param nombre    el nombre del alumno/usuario

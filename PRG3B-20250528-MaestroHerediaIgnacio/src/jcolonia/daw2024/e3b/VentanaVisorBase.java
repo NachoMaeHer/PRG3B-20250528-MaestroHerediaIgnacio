@@ -21,8 +21,8 @@ import javax.swing.border.TitledBorder;
  * Aplicación de ventanas con una única ventana principal y una caja de texto
  * central.
  * 
- * @version 09.08 (20250525000)
- * @author <a href="dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @version 09.08 (20250528000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
  */
 public class VentanaVisorBase {
 

@@ -6,8 +6,8 @@ package jcolonia.daw2024.e3b;
  * 
  * @see AccesoBD
  * 
- * @version 09.08 (20250525000)
- * @author <a href="dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @version 09.08 (20250528000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
  */
 public class AccesoBDException extends Exception {
 	/** Identificación de versión de la clase. */

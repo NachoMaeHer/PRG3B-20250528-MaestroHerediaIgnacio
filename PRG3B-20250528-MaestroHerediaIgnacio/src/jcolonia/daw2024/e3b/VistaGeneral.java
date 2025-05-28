@@ -7,8 +7,8 @@ import java.util.Scanner;
 /**
  * Utilidades básicas para interface en consola de texto.
  * 
- * @version 1.2 (2025426000)
- * @author <a href="mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @version 1.2 (20250528000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
  */
 public class VistaGeneral {
 	/** Secuencia de escape ANSI para activar el color rojo. */

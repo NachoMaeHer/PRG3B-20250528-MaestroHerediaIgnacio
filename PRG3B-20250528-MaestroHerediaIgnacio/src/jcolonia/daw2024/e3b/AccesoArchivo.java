@@ -11,8 +11,8 @@ import java.util.List;
 /**
  * Archivo para importar o exportar texto.
  * 
- * @version 1.1 (20240502000)
- * @author <a href="mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @version 1.1 (20250528000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
  */
 public class AccesoArchivo {
 	/** El nombre o ruta al archivo. */

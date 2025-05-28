@@ -4,8 +4,8 @@ package jcolonia.daw2024.e3b;
  * Excepción usada por la clase {@link InventarioAula} cuando los parámetros de
  * creación del mismo no son coherentes o compatibles.
  * 
- * @author <a href= "mailto:dmartin.jcolonia@gmail.com">David H. Martín</a>
- * @version 6.90 (2025426000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
+ * @version 6.90 (20250528000)
  */
 public class InventarioException extends Exception {
 	/** Identificación de versión de la clase. */

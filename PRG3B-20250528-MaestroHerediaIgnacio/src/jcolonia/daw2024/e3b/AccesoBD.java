@@ -19,8 +19,8 @@ import java.util.Set;
  * Utilidades de acceso a una base de datos SQLite para gestión de
  * {@link InventarioAula puestos de un aula de informática}.
  * 
- * @version 09.08 (20250525001)
- * @author <a href="dmartin.jcolonia@gmail.com">David H. Martín</a>
+ * @version 09.08 (20250528000)
+ * @author <a href= "mailto:ignacio.maeher@educa.jcyl.es">Ignacio Maestro Heredia</a>
  */
 public class AccesoBD implements AutoCloseable {
 	/** Sentencia SQL para crear la tabla «Puestos» –vacía– si no existe. */
