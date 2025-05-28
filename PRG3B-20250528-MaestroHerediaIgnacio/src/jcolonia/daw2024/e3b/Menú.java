@@ -16,6 +16,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JMenuBar;
 import java.awt.event.KeyEvent;
+import javax.swing.JButton;
 
 public class Menú extends JFrame {
 
@@ -27,6 +28,8 @@ public class Menú extends JFrame {
 	private JMenu NewSubMenu;
 	private JMenuItem subMenuAyuda;
 	private JMenuItem subMenuArchivo;
+	private JPanel jpanelBordes;
+	private JButton btnNewButton;
 
 	/**
 	 * Lanza la aplicación.
@@ -67,6 +70,7 @@ public class Menú extends JFrame {
 			jpanelExterior.setBorder(new EmptyBorder(10, 10, 10, 10));
 			jpanelExterior.setLayout(new BorderLayout(0, 10));
 			jpanelExterior.add(getMenuBar_1(), BorderLayout.NORTH);
+			jpanelExterior.add(getJpanelBordes(), BorderLayout.CENTER);
 		}
 		return jpanelExterior;
 	}
@@ -99,5 +103,19 @@ public class Menú extends JFrame {
 			subMenuArchivo.setMnemonic(KeyEvent.VK_A);
 		}
 		return subMenuArchivo;
+	}
+	private JPanel getJpanelBordes() {
+		if (jpanelBordes == null) {
+			jpanelBordes = new JPanel();
+			jpanelBordes.setLayout(new BorderLayout(0, 10));
+			jpanelBordes.add(getBtnNewButton(), BorderLayout.SOUTH);
+		}
+		return jpanelBordes;
+	}
+	private JButton getBtnNewButton() {
+		if (btnNewButton == null) {
+			btnNewButton = new JButton("Cerrar");
+		}
+		return btnNewButton;
 	}
 }
