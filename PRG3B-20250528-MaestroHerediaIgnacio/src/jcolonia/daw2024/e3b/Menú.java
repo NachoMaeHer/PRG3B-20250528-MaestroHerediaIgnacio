@@ -15,6 +15,7 @@ import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JMenuBar;
+import java.awt.event.KeyEvent;
 
 public class Menú extends JFrame {
 
@@ -28,7 +29,7 @@ public class Menú extends JFrame {
 	private JMenuItem subMenuArchivo;
 
 	/**
-	 * Launch the application.
+	 * Lanza la aplicación.
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -44,7 +45,7 @@ public class Menú extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Crea el frame.
 	 */
 	public Menú() {
 		initialize();
@@ -88,12 +89,14 @@ public class Menú extends JFrame {
 	private JMenuItem getSubMenuAyuda() {
 		if (subMenuAyuda == null) {
 			subMenuAyuda = new JMenuItem("Ayuda");
+			subMenuAyuda.setMnemonic(KeyEvent.VK_U);
 		}
 		return subMenuAyuda;
 	}
 	private JMenuItem getSubMenuArchivo() {
 		if (subMenuArchivo == null) {
 			subMenuArchivo = new JMenuItem("Archivo");
+			subMenuArchivo.setMnemonic(KeyEvent.VK_A);
 		}
 		return subMenuArchivo;
 	}
