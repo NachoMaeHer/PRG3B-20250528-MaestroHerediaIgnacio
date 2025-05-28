@@ -25,6 +25,7 @@ public class Menú extends JFrame {
 	private JMenuBar subMenu;
 	private JMenu NewSubMenu;
 	private JMenuItem subMenuAyuda;
+	private JMenuItem subMenuArchivo;
 
 	/**
 	 * Launch the application.
@@ -80,6 +81,7 @@ public class Menú extends JFrame {
 		if (NewSubMenu == null) {
 			NewSubMenu = new JMenu("Menú");
 			NewSubMenu.add(getSubMenuAyuda());
+			NewSubMenu.add(getSubMenuArchivo());
 		}
 		return NewSubMenu;
 	}
@@ -88,5 +90,11 @@ public class Menú extends JFrame {
 			subMenuAyuda = new JMenuItem("Ayuda");
 		}
 		return subMenuAyuda;
+	}
+	private JMenuItem getSubMenuArchivo() {
+		if (subMenuArchivo == null) {
+			subMenuArchivo = new JMenuItem("Archivo");
+		}
+		return subMenuArchivo;
 	}
 }
